@@ -1,0 +1,1 @@
+SELECT * FROM Pedidos WHERE id_usuario = 1;
