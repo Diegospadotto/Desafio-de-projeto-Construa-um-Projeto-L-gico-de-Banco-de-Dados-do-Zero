@@ -1,0 +1,24 @@
+-- Inserindo usuários
+INSERT INTO Usuarios (nome, email, senha, tipo_usuario) VALUES
+('João Silva', 'joao@exemplo.com', 'senha123', 'cliente'),
+('Maria Oliveira', 'maria@exemplo.com', 'senha456', 'admin');
+
+-- Inserindo produtos
+INSERT INTO Produtos (nome, descricao, preco, estoque) VALUES
+('Camiseta', 'Camiseta de algodão', 39.90, 100),
+('Tênis', 'Tênis esportivo', 199.90, 50);
+
+-- Inserindo pedidos
+INSERT INTO Pedidos (id_usuario, data, status) VALUES
+(1, '2025-02-15 14:30:00', 'pendente'),
+(2, '2025-02-15 15:00:00', 'processando');
+
+-- Inserindo itens de pedidos
+INSERT INTO Itens_Pedido (id_pedido, id_produto, quantidade, preco) VALUES
+(1, 1, 2, 39.90),
+(1, 2, 1, 199.90);
+
+-- Inserindo pagamentos
+INSERT INTO Pagamentos (id_pedido, metodo_pagamento, status, valor) VALUES
+(1, 'cartão', 'pendente', 279.70),
+(2, 'boleto', 'pago', 199.90);
