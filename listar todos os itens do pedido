@@ -1,0 +1,4 @@
+SELECT Produtos.nome, Itens_Pedido.quantidade, Itens_Pedido.preco
+FROM Itens_Pedido
+JOIN Produtos ON Itens_Pedido.id_produto = Produtos.id_produto
+WHERE Itens_Pedido.id_pedido = 1;
